@@ -4,16 +4,18 @@ import { Link } from 'react-router-dom';
 import {useHistory } from 'react-router-dom'
 import './Navbar.css'
 import { useSelector } from 'react-redux';
-import { TokenState } from '../../../store/tokens/tokensReducer';
+
 import { useDispatch } from "react-redux";
-import { addName, addToken } from '../../../store/tokens/actions';
+
 import {toast} from 'react-toastify';
+import { UserState } from '../../../store/user/userReducer';
+import { addName, addToken } from '../../../store/user/actions';
 
 function Navbar() {
-    const token = useSelector<TokenState, TokenState["tokens"]>(
+    const token = useSelector<UserState, UserState["tokens"]>(
         (state) => state.tokens
       );
-      const name = useSelector<TokenState, TokenState["tokens"]>(
+      const name = useSelector<UserState, UserState["names"]>(
         (state) => state.names
       );
     let history = useHistory();

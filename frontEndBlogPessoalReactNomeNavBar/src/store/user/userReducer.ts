@@ -1,6 +1,6 @@
 import {Action } from './actions';
 
-export interface TokenState {
+export interface UserState {
     tokens: string,
     names: string,
 }
@@ -10,7 +10,7 @@ const initialState = {
     names: ""
 }
 
-export const tokenReducer = (state: any = initialState, action: Action) =>{
+export const userReducer = (state: UserState = initialState, action: Action) =>{
     switch (action.type){
         case "ADD_TOKEN": {
             return {tokens: action.payload, names: state.names}
