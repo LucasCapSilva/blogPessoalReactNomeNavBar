@@ -153,3 +153,7 @@ https://github.com/LucasCapSilva/blogPessoalReactNomeNavBar/blob/main/frontEndBl
 
 https://github.com/LucasCapSilva/blogPessoalReactNomeNavBar/blob/main/frontEndBlogPessoalReactNomeNavBar/src/components/postagens/cadastroPost/CadastroPost.tsx
 
+## Resultado
+
+
+![enter image description here](https://i.imgur.com/hhDlcF0.png)
